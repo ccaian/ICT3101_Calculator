@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace ICT3101_Calculator
 {
@@ -284,6 +285,11 @@ namespace ICT3101_Calculator
             //FileReader getTheMagic = new FileReader();
             //----------------------------------------
             //string[] magicStrings = getTheMagic.Read("C:\\Users\\sadiq\\Documents\\GitHub\\ICT3101_Calculator\\ICT3101_Calculator\\ICT3101_Calculator\\MagicNumbers.txt");
+
+            //String path = Path.Combine(Directory.GetCurrentDirectory(), "MagicNumbers.txt");
+            //string[] magicStrings = fileReader.Read(path);
+           
+
             string[] magicStrings = fileReader.Read("MagicNumbers.txt");
 
             if ((choice >= 0) && (choice < magicStrings.Length))
@@ -298,4 +304,4 @@ namespace ICT3101_Calculator
 
 
 }
-}
+

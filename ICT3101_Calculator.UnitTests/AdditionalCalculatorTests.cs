@@ -11,13 +11,13 @@ namespace ICT3101_Calculator.UnitTests
     {
         private Calculator _calculator;
         private Mock<IFileReader> _mockFileReader;
-
+        String path = Path.Combine(Directory.GetCurrentDirectory(), "MagicNumbers.txt");
         [SetUp] 
         public void Setup() 
         { 
             _mockFileReader = new Mock<IFileReader>();
             _mockFileReader.Setup(fr => 
-                fr.Read("MagicNumbers.txt")).Returns(new string[2]{ "42","42"});
+                fr.Read(path)).Returns(new string[2]{ "42","42"});
             _calculator = new Calculator(); 
         }
 
