@@ -241,6 +241,7 @@ namespace ICT3101_Calculator
 
         public double AverageNumberExpectedFailures(double num1, double num2, double num3)
         {
+            //test
             double total = (num1 * (1 - Math.Exp(-(num2 / num1) * num3)));
             double multiplier = Math.Pow(10, Convert.ToDouble(2));
             total = Math.Ceiling(total * multiplier) / multiplier;
