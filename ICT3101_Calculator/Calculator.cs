@@ -243,6 +243,7 @@ namespace ICT3101_Calculator
         {
             //test
             //test2
+            //test3
             double total = (num1 * (1 - Math.Exp(-(num2 / num1) * num3)));
             double multiplier = Math.Pow(10, Convert.ToDouble(2));
             total = Math.Ceiling(total * multiplier) / multiplier;
